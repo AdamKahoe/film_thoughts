@@ -48,7 +48,7 @@ class Recipe:
         is_valid = True
         if len(recipe['title']) < 2:
             is_valid = False
-            flash("Name must be at least 2 characters","film")
+            flash("Title must be at least 2 characters","film")
         if recipe['date_made'] == "":
             is_valid = False
             flash("Please enter a date","film")
