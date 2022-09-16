@@ -1,7 +1,7 @@
 from flask_app.config.mysqlconnection import connectToMySQL
 from flask import flash
 
-class Recipe:
+class Film:
     db_name = 'film_schema'
 
     def __init__(self,db_data):
