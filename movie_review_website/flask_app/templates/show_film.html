@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Film</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+
+    <nav class="d-flex justify-content-between align-items-center col-12">
+        <div class="d-flex col-4 justify-content-around">
+            <a href="/dashboard" class="btn btn-primary">Dashboard</a>
+            <a href="/logout" class="btn btn-info">Logout</a>
+
+        </div>
+
+    </nav>
+
+    <!-- Not Nav Bar  -->
+
+    <!-- Show Section -->
+
+<div class="card col-10 mx-auto my-5 bg-dark text-light">
+    <div class="card-body">
+        <h3 class="card-title text-primary">Year: {{ film.year }}</h3>
+        <p class="card-text">Description:  {{ film.description }}</p>
+        <h3>Seller: {{film.user}}</h3>
+        <a href="/delete/film/{{film.id}}" class="btn btn-info">Film</a>
+    </div>
+</div>
+</body>
+</html>
